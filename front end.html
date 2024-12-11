@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Prescription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MEDICATION PRESCRIPTION FORM</h1>
+        <form id="prescription-form">
+            <div class="form-group">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="medicationName">Medication Name:</label>
+                <input type="text" id="medicationName" name="medicationName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dosage">Dosage (mg):</label>
+                <input type="number" id="dosage" name="dosage" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity (pills):</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prescriptionDate">Prescription Date:</label>
+                <input type="date" id="prescriptionDate" name="prescriptionDate" required>
+            </div>
+
+            <button type="submit" id="submit">Submit Prescription</button>
+        </form>
+        <div id="confirmation" style="display: none;">
+            <h2>Prescription Submitted Successfully!</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
